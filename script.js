@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
           index++;
           setTimeout(typeWriter, 100); // Adjust the typing speed (in milliseconds)
       }
+
+
+     AOS.init();
   }
 
   // Start the typewriter effect
