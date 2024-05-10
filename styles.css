@@ -1,0 +1,212 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .logo img{
+    width: 50px;
+  }
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    padding: 15px 20px;
+    justify-content: content;
+    height: 5vh;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo p {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .accordion {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .panel {
+    display: none;
+    padding-left: 15px;
+  }
+  
+  .panel a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  
+  .panel a:hover {
+    background-color: #777;
+  }
+  
+  .show {
+    display: block;
+  }
+  ul{
+    visibility: hidden;
+  }
+  .contain{
+    color: white;
+  }
+  .main{
+    /* margin: 10px; */
+    background-size: Cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72vh;
+    padding: 10px;
+    /* backdrop-filter: blur(5px); */
+    filter: blur(0px);
+    background-image: linear-gradient(rgba(5, 54, 203, 0.6), rgba(9, 24, 62, 0.6)), url(./people.jpg);
+    overflow: hidden;
+    text-align: center;
+    /* justify-content: center; */
+  }
+  .main h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    width: 350px;
+    position: ;
+    text-shadow: 2px 2px 2px black;
+  }
+  hr {
+    width: 40px;
+    background-color: red;
+    animation: grow 2s infinite;
+  }
+  .contain {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 40px;
+    
+  }
+  .divider {
+    width: 1px;
+    background-color: #fff;
+    margin: 0 10px;
+  }
+  #nave {
+    background: none;
+    width: 50px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+    align-content: center;
+  }
+  .text{
+    color: rgb(231, 232, 232);
+    font-family: Arial;
+  }
+  .boxes{
+    margin: 6px;
+  }
+  .box1, .box2, .box3{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./20230528_123223-1.jpg);
+
+    background-position: center;
+    background-size: cover;
+    /* width: 100%; */
+    height: 190px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px;
+  }
+  .cards {
+    margin: 7px;
+  }
+  .card1, .card2, .card3{
+    height: 300px;
+    background-color: rgb(238, 233, 233);
+    margin: auto;
+    margin-top: 15px;
+    width: 310px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./Del1.jpg);
+    background-size: COVER;
+    background-position: center;
+  }
+.card1 h1, .sub-text{
+  text-align: center;
+  margin: 20px;
+  margin-top: 20px;
+  font-family: fantasy;
+  color: rgb(8, 8, 62);
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px ;
+  word-spacing: 9px;
+  letter-spacing: 1px;
+  text-transform: ;
+}
+.card1 button, .sub{
+  width: 170px;
+  margin-top: 20px;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgb(13, 144, 225);
+  border: none;
+
+}
+
+
+
+
+  @keyframes grow {
+    from{
+      width: 50px;
+    }
+    to {
+      width: 200px;
+    }
+  }
+  .cont{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  @media (max-width: 768px) {
+    .menu li {
+      margin-bottom: 5px;
+    }
+  }
+  
