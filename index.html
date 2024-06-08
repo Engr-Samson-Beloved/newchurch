@@ -6,10 +6,15 @@
   <title>Accordion Menu Toggle Navbar</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
+  <div id="loader" class="loader">
+    <div class="balloon orange"></div>
+    <div class="balloon blue"></div>
+</div>
   <nav class="navbar" id="Navbar">
-    <div class="logo"> <img src="./logo.png" alt="" srcset=""><button id="nave" onclick="show()">&#9776;</button></div>
+    <div class="logo"> <img src="./logo.png" alt="" srcset=""><a id="nave" onclick="show()">&#9776;</a></div>
     <ul class="menu" id="menus">
       <li>
         <button class="accordion">Home</button>
@@ -59,22 +64,36 @@
     <h1 id="typewriter"></h1>
 <hr><p class="text">Holiness And Prayer</p>
 <div class="contain">
-  <div class="cont"><h2>20yrs <br><span class="text">In ministry</span> </h2></div>
+  <div class="cont"><h2>Deliverance<br><span class="text">Healing</span> </h2></div>
 <div class="divider"></div>
-  <div class="cont"><h2>20yrs <br><span class="text">In ministry</span> </h2></div>
+  <div class="cont"><h2>Testimonies <br><span class="text">Breakthrough</span> </h2></div>
   <div class="divider"></div>
-  <div class="cont"><h2>20yrs <br><span class="text">In ministry</span> </h2></div>
+  <div class="cont"><h2>Miracle<br><span class="text">Signs</span> </h2></div>
 </div>
   </div>
+  <!-- <div class="mobile-container"><box-icon name='user'></box-icon>
+    <div class="text">New Here?</div>
+    <div class="action-icon">&gt;</div>
+</div> -->
   <div class="boxes">
     <div class="box1" data-aos="fade-up"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1000"></div>
+    <div class="new-here">
+      <div class="new-bar">
+        <box-icon name='user'></box-icon> <p> New Here ?</p> <a href="">&gt;</a>
+      </div>
 
-    <div class="box2" data-aos="fade-up"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000"></div>
+      <div class="new-bar">
+        <box-icon name='user'></box-icon> <p> New Here ?</p> <a href="">&gt;</a>
+      </div>
 
+      <div class="new-bar">
+        <box-icon name='user'></box-icon> <p> New Here ?</p> <a href="">&gt;</a>
+      </div>
+    </div>
+    
+    
     <div class="box3" data-aos="fade-up"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1000"></div>

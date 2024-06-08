@@ -1,10 +1,94 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: poppins, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0f0;
+    
   }
-  
+  /* Loader */
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F1B21;
+    z-index: 9999;
+}
+
+.balloon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 1s infinite;
+}
+
+.orange {
+  background-color: orange;
+  animation-delay: 0s;
+}
+
+.blue {
+  background-color: blue;
+  animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+}
+/* Question Div */
+.mobile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    font-size: 24px;
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.text {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #333333;
+}
+
+.action-icon {
+    font-size: 24px;
+    color: #3498db;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 16px;
+    }
+
+    .info-icon, .action-icon {
+        font-size: 20px;
+    }
+}
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -12,22 +96,27 @@ body {
   }
   .logo img{
     width: 50px;
+    
   }
   /* Navbar styles */
   .navbar {
-    background-color: #333;
+    background-color: #0F1B21;
     color: #fff;
-    padding: 3px;
+    padding: 4px;
     padding: 15px 20px;
     justify-content: content;
-    height: 5vh;
+    height: 7vh;
+    transition: 1s ease-in;
   }
-  
+  /* .navbar:hover{
+    height: 40vh;
+  } */
   .logo {
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 3s;
   }
   .logo p {
     text-align: center;
@@ -94,8 +183,9 @@ body {
   }
   .main h1{
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.6rem;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
     text-align: center;
     margin: auto;
     margin-top: 150px;
@@ -124,16 +214,18 @@ body {
   }
   #nave {
     background: none;
-    width: 50px;
-    height: 40px;
+    /* width: 70px; */
+    /* height: 40px; */
     color: white;
-    font-size: 20px;
-    margin: 2px;
+    font-size: 40px;
+    margin-top: -10px;
+    line-height: -60px;
     align-content: center;
   }
   .text{
     color: rgb(231, 232, 232);
-    font-family: Arial;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
   }
   .boxes{
     margin: 6px;
@@ -166,6 +258,9 @@ body {
     background-size: COVER;
     background-position: center;
   }
+  .box3{
+    margin-top: 110px;
+  }
 .card1 h1, .sub-text{
   text-align: center;
   margin: 20px;
@@ -188,7 +283,42 @@ body {
   border: none;
 
 }
-
+.new-here{
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  height: 40px;
+  align-items: center;
+  
+}
+.new-here p, a {
+  color: black;
+  font-family: poppins, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+.new-here a {
+  margin-left: 150px;
+  text-decoration: none;
+}
+ .new-bar {
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+  margin-top: -12px;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background-color: ;
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+ }
 
 
 
@@ -202,7 +332,7 @@ body {
   }
   .cont{
     font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: poppins, sans-serif;
   }
   @media (max-width: 768px) {
     .menu li {
