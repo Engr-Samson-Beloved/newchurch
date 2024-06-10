@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    
   }
   /* Loader */
   .loader {
@@ -463,13 +462,13 @@ body {
 
 /* Upcoming Events Section */
 .events {
-  padding: 50px;
+  padding: 10px;
   background-color: #fff;
   text-align: center;
 }
 
 .events h2 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 20px;
   color: #333;
 }
@@ -548,7 +547,7 @@ body {
 
 /* Services and Ministries Section */
 .services {
-  padding: 50px;
+  padding: 10px;
   background-color: #fff;
   text-align: center;
 }
@@ -606,7 +605,7 @@ body {
 
 /* Contact Us Section */
 .contact {
-  padding: 50px;
+  /* padding: 10px; */
   background-color: #fff;
   text-align: center;
 }
@@ -712,7 +711,7 @@ body {
 
 /* Multimedia Content Section */
 .multimedia {
-  padding: 50px;
+  /* padding: 50px; */
   background-color: #fff;
   text-align: center;
 }
@@ -877,7 +876,7 @@ body {
 
 /* Volunteer Opportunities Section */
 .volunteer {
-  padding: 50px;
+  /* padding: 50px; */
   background-color: #fff;
   text-align: center;
 }
