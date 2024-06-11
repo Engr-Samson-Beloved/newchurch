@@ -15,26 +15,26 @@ for (i = 0; i < acc.length; i++) {
   });
 };
 
-let isToggled = false;
-function show(){
-  isToggled = !isToggled;
-  var menu = document.getElementById('menus');
-  var navv = document.getElementById('Navbar');
-  var nave = document.getElementById('nave');
-  if(isToggled){
-    navv.style.height= "97vh";
-    menu.style.visibility = "visible";
-    nave.innerHTML = "&times;"
-    navv.style.transition = ".30s";
-  }else{
-    navv.style.height= "7vh";
-    navv.style.transition = ".30s";
-    menu.style.visibility = "hidden";
-    nave.innerHTML = "&#9776;";
+// let isToggled = false;
+// function show(){
+//   isToggled = !isToggled;
+//   var menu = document.getElementById('menus');
+//   var navv = document.getElementById('Navbar');
+//   var nave = document.getElementById('nave');
+//   if(isToggled){
+//     navv.style.height= "97vh";
+//     menu.style.visibility = "visible";
+//     nave.innerHTML = "&times;"
+//     navv.style.transition = ".30s";
+//   }else{
+//     navv.style.height= "7vh";
+//     navv.style.transition = ".30s";
+//     menu.style.visibility = "hidden";
+//     nave.innerHTML = "&#9776;";
 
 
-  }
-}
+//   }
+// }
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
 
 
 // document.addEventListener('DOMContentLoaded', function() {

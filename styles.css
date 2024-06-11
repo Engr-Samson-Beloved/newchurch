@@ -279,9 +279,12 @@ body {
     justify-content: center;
     text-align: center;
     box-shadow: 2px 2px 2px;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(./Del1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(./Del2.jpg);
     background-size: COVER;
     background-position: center;
+  }
+  .card3 {
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(./Del4.jpg);
   }
   .box3{
     margin-top: 110px;
@@ -1012,11 +1015,15 @@ body {
 
 
 /* Footer */
+.footer-section {
+  background-color: #333;
+}
 .footer {
   background-color: #333;
   color: #fff;
   padding: 50px 20px;
   text-align: center;
+  /* bottom: 0; */
 }
 
 .footer-content {
@@ -1082,6 +1089,223 @@ body {
   font-size: 0.9em;
   color: #bbb;
 }
+/* Podcast Section */
+.podcast-section {
+  background-color: #fFF;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.podcast-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.podcast-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0F1B21;
+}
+
+.podcast-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.podcast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.podcast-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.podcast-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #FF4500;
+}
+
+.podcast-item p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: black;
+  font-family: POPPINS, sans-serif;
+}
+
+.podcast-item audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #0F1B21;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Video Section */
+.video-section {
+  background-color: #fFF;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.video-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.video-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+}
+
+.video-item h3 {
+  font-size: 1.5em;
+  margin: 15px 0 10px;
+  color: #ff4500;
+}
+
+.video-item p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Social Media Section */
+.social-media-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.social-media-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-media-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.social-media-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.social-media-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.social-media-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.facebook-feed, .instagram-feed {
+  text-align: center;
+}
+
+.fb-page, #instagram-feed {
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .social-media-list {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .social-media-item {
+      width: 45%;
+  }
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .video-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .video-item {
+      width: 30%;
+      margin-bottom: 30px;
+  }
+}
+
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .podcast-list {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .podcast-item {
+      width: 30%;
+  }
+}
+
 
 /* Responsive Footer */
 @media (min-width: 768px) {
