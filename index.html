@@ -63,18 +63,62 @@
       </li>
     </ul><hr>
   </nav>
-  <div class="main">
-    <h1 id="typewriter"></h1>
-<hr><p class="text" data-aos="zoom-in-up">Holiness And Prayer</p>
-<div class="contain">
-  <div class="cont"><h2>Deliverance<br><span class="text">Healing</span> </h2></div>
-<div class="divider"></div>
-  <div class="cont"><h2>Testimonies <br><span class="text">Breakthrough</span> </h2></div>
-  <div class="divider"></div>
-  <div class="cont"><h2>Miracle<br><span class="text">Signs</span> </h2></div>
-</div>
-<a href="#visit" class="cta-button">Plan Your Visit</a>
-  </div>
+    <div class="main">
+        <h1 id="typewriter"></h1>
+        <hr><p class="text" data-aos="zoom-in-up">Holiness And Prayer</p>
+        <div class="contain">
+            <div class="cont"><h2>Deliverance<br><span class="text">Healing</span> </h2></div>
+            <div class="divider"></div>
+            <div class="cont"><h2>Testimonies <br><span class="text">Breakthrough</span> </h2></div>
+            <div class="divider"></div>
+            <div class="cont"><h2>Miracle<br><span class="text">Signs</span> </h2></div>
+        </div>
+        <button id="planVisitBtn" class="action-button">Plan Your Visit</button>
+    </div>
+            <!-- Plan Your Visit Modal -->
+            <div id="planVisitModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Plan Your Visit</h2>
+                    <p>Welcome! Here's what you need to know to plan your visit to our church.</p>
+                    <h3>Service Times</h3>
+                    <p>Sundays at 9 AM and 11 AM</p>
+                    <h3>Location</h3>
+                    <p>001 Redemption Mountain, Ondo City, Ondo State, ZIP</p>
+                    <div id="map"></div>
+                    <h3>Parking Information</h3>
+                    <p>Free parking is available in the church parking lot.</p>
+                    <h3>Contact Information</h3>
+                    <p>Email: worldthunderministry@gmail.com | Phone: (234) 806-788-8456</p>
+                    <button id="registerVisitBtn" class="action-button">Click Here</button>
+                </div>
+            </div>
+        
+        <!-- Pre-Register Form Modal -->
+        <div id="preRegisterModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Pre-Register</h2>
+                <form id="preRegisterForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9eed172f-cb6c-408f-8650-abe0fe0cb100">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <input type="submit" class="action-button">
+                </form>
+            </div>
+        </div>
+        <!-- Include the Facebook SDK -->
+        
+        
+        <!-- Include the EmailJS SDK -->
+            </div>
 
   <div class="contact-container" >
     <div class="contact-info" data-aos="fade-up"
@@ -332,11 +376,12 @@ data-aos-duration="1000">
       <div class="contact-form" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
       data-aos-duration="1000">
           <h3>Send Us a Message</h3>
-          <form data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
+          <form data-aos="zoom-in-up" action="https://api.web3forms.com/submit" method="POST" data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">
               <div class="form-group" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
               data-aos-duration="1000">
                   <label for="name">Name</label>
+                  <input type="hidden" name="access_key" value="9eed172f-cb6c-408f-8650-abe0fe0cb100">
                   <input type="text" id="name" name="name" required>
               </div>
               <div class="form-group" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
@@ -366,10 +411,10 @@ data-aos-duration="1000">
       <h3>Recent Sermons</h3>
       <ul class="sermon-list" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
       data-aos-duration="1000">
-          <li><a href="sermon1.mp3" target="_blank">Sermon Title 1</a> - Date</li>
-          <li><a href="sermon2.mp3" target="_blank">Sermon Title 2</a> - Date</li>
-          <li><a href="sermon3.mp3" target="_blank">Sermon Title 3</a> - Date</li>
-          <li><a href="sermon4.mp3" target="_blank">Sermon Title 4</a> - Date</li>
+          <li><a href="./Agbara_Olorun_Po(256k).mp3" target="_blank">Sunscity_Live_FM</a> - 12-01-2024</li>
+          <li><a href="./Adaniloro S.P. Olabanji .mp3" target="_blank">Adaba_Live_FM</a> - 12-01-2024</li>
+          <li><a href="sermon3.mp3" target="_blank">Orange_Live_FM</a> - 12-01-2024</li>
+          <li><a href="sermon4.mp3" target="_blank">Ekimogun_Live FM</a> - 12-03-2024</li>
       </ul>
   </div>
   <div class="gallery" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
@@ -415,21 +460,21 @@ data-aos-duration="1000">
       data-aos-duration="1000">
           <h3>Join Choir</h3>
           <p>Register To become a choir in the Church Of God, Utilise your Talent And become a glorious SInger.</p>
-          <button class="volunteer-button" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
+          <button class="volunteer-button"  data-aos="zoom-in-up"  data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">Sign Up</button>
       </div>
       <div class="volunteer-card" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
       data-aos-duration="1000">
           <h3>Community Cleanup</h3>
           <p>Join our community cleanup crew and help keep our city beautiful.</p>
-          <button class="volunteer-button">Join Us</button>
+          <button class="volunteer-button" id="join-choir">Join Us</button>
       </div>
       <div class="volunteer-card" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
       data-aos-duration="1000">
           <h3>Youth Mentoring</h3>
           <p data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">Become a mentor for our youth group and make a positive impact.</p>
-          <button class="volunteer-button">Volunteer</button>
+          <button class="volunteer-button" class="join-choir">Volunteer</button>
       </div>
   </div>
 </section>
@@ -483,32 +528,20 @@ data-aos-duration="1000">
 <div id="fb-root"></div>
 
 <!-- YOUTUBR -->
-
-<section class="video-section" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
-data-aos-duration="1000">
-    <div class="container">
-        <h2>Our YouTube Channel</h2>
-        <p>Watch our latest sermons, inspirational messages, and events on our YouTube channel.</p>
-        
-        <div class="video-list">
-            <div class="video-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
-                <h3>Deliverance Hour</h3>
-                <p>Thank you for watching thunder minisgtry Tv</p>
-            </div>
-            <div class="video-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
-                <h3>Healing Service 2</h3>
-                <p>Thank you for watching thunder minisgtry Tv</p>
-            </div>
-            <div class="video-item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
-                <h3>Breakthrough</h3>
-                <p>Thank you for watching thunder minisgtry Tv</p>
-            </div>
-        </div>
+<div class="video-section">
+    <h2>Our Latest Sermons on YouTube</h2>
+    <div class="video-container">
+        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/xjTq4Cs5OFY?si=TeOLzTGaHnlBVXlj?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-</section>
+    <button id="playButton" class="action-button">Play Video</button>
+    <button id="pauseButton" class="action-button">Pause Video</button>
+
+    <div class="video-container">
+        <iframe id="youtubeVideo" src="https://www.youtube.com/embed/qKI14QZvq7k?si=VPQBF8Tu2y-89K0n?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button id="playButton" class="action-button">Play Video</button>
+    <button id="pauseButton" class="action-button">Pause Video</button>
+</div>
 
 <!-- AUDIO&PODCAST -->
 <section class="podcast-section">
@@ -518,31 +551,67 @@ data-aos-duration="1000">
         
         <div class="podcast-list">
             <div class="podcast-item">
-                <h3>Podcast Title 1</h3>
-                <p>Short description of the podcast content goes here. It's an inspirational message about...</p>
+                <h3>Agbara_Olorun_Po</h3>
+                <p>Agbara_Olorun_Po Is a powerful audio (Click to Listen). It's an inspirational song, that awakens soul and talks about the power of God...</p>
                 <audio controls>
-                    <source src="path/to/podcast1.mp3" type="audio/mpeg">
+                    <source src="./Agbara_Olorun_Po(256k).mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                <a href="path/to/podcast1.mp3" download class="download-btn">Download</a>
+                <a href="./Agbara_Olorun_Po(256k).mp3" download class="download-btn">Download</a>
             </div>
             <div class="podcast-item">
-                <h3>Podcast Title 2</h3>
-                <p>Short description of the podcast content goes here. It's an inspirational message about...</p>
+                <h3>Adaniloro_GbagbeOla</h3>
+                <p>It's an inspirational message by Prophet SP. Olabanji, that talks about the Evil Men...</p>
                 <audio controls>
-                    <source src="path/to/podcast2.mp3" type="audio/mpeg">
+                    <source src="./Adaniloro S.P. Olabanji .mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                <a href="path/to/podcast2.mp3" download class="download-btn">Download</a>
+                <a href="./Prophet S.P Olabanji - Arogun Gbogunmi.mp3" download class="download-btn">Download</a>
             </div>
             <div class="podcast-item">
-                <h3>Podcast Title 3</h3>
-                <p>Short description of the podcast content goes here. It's an inspirational message about...</p>
+                <h3>Arogun Gbogunmi</h3>
+                <p>Agbara_Olorun_Po Is a powerful audio (Click to Listen). It's an inspirational song, that awakens soul and talks about the power of God...</p>
                 <audio controls>
-                    <source src="path/to/podcast3.mp3" type="audio/mpeg">
+                    <source src="./Prophet S.P Olabanji - Arogun Gbogunmi.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                <a href="path/to/podcast3.mp3" download class="download-btn">Download</a>
+                <a href="./Prophet S.P Olabanji - Arogun Gbogunmi.mp3" download class="download-btn">Download</a>
+            </div>
+            <div class="podcast-item">
+                <h3>Living_God</h3>
+                <p>Agbara_Olorun_Po Is a powerful audio (Click to Listen). It's an inspirational song, that awakens soul and talks about the power of God...</p>
+                <audio controls>
+                    <source src="./Prophet S.P Olabanji - Living God.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="./Agbara_Olorun_Po(256k).mp3" download class="download-btn">Download</a>
+            </div>
+            <div class="podcast-item">
+                <h3>EgbeOrin_Iyin Soke</h3>
+                <p>Agbara_Olorun_Po Is a powerful audio (Click to Listen). It's an inspirational song, that awakens soul and talks about the power of God...</p>
+                <audio controls>
+                    <source src="./Prophet S.P Olabanji Egbe Orin Yin Soke.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="./Prophet S.P Olabanji Egbe Orin Yin Soke.mp3" download class="download-btn">Download</a>
+            </div>
+            <div class="podcast-item">
+                <h3>Tetede Audio_Podcast</h3>
+                <p>Agbara_Olorun_Po Is a powerful audio (Click to Listen). It's an inspirational song, that awakens soul and talks about the power of God...</p>
+                <audio controls>
+                    <source src="./Prophet S.P Olabanji Tetede.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="./Prophet S.P Olabanji Tetede.mp3" download class="download-btn">Download</a>
+            </div>
+            <div class="podcast-item">
+                <h3>Ibi_Mi Je Iyanu</h3>
+                <p>It's an inspirational message about the birth of Prophet S.P. Olabanji...</p>
+                <audio controls>
+                    <source src="./S.P Olabanji C,A.C (Ibi Je Iyanu).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <a href="./S.P Olabanji C,A.C (Ibi Je Iyanu).mp3" download class="download-btn">Download</a>
             </div>
         </div>
     </div>
@@ -556,8 +625,8 @@ data-aos-duration="1000">
   data-aos-duration="1000">
       <article class="blog-post" data-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
       data-aos-duration="1000">
-          <h3><a href="post1.html">Post Title 1</a></h3>
-          <p>Author Name - Date</p>
+          <h3><a  href="post1.html?post=post1" onclick="saveScrollPos()">Abundance Through Faith</a></h3>
+          <p>Sam John - 12-08-2023</p>
           <pdata-aos="zoom-in-up"   data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">Brief description or excerpt of the blog post...</p>
       </article>

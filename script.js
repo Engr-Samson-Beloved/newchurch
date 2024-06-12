@@ -14,6 +14,29 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 };
+// JavaScript to handle modal opening and closing
+// JavaScript to handle modal opening and closing
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('planVisitModal');
+    var btn = document.getElementById('planVisitBtn');
+    var span = document.getElementsByClassName('close-button')[0];
+
+    btn.onclick = function() {
+        modal.style.display = 'block';
+    }
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});
+
+
 
 // let isToggled = false;
 // function show(){
@@ -61,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() => {
       loader.style.display = "none";
       content.style.display = "block";
-  }, 3000); // Adjust the timeout duration as needed
+  }, 1000); // Adjust the timeout duration as needed
 });
 
 // backgroung Changer
@@ -242,3 +265,96 @@ document.addEventListener('DOMContentLoaded', function() {
 //       }
 //   });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var planVisitModal = document.getElementById('planVisitModal');
+    var preRegisterModal = document.getElementById('preRegisterModal');
+    var planVisitBtn = document.getElementById('planVisitBtn');
+    var registerVisitBtn = document.getElementById('registerVisitBtn');
+    var closeButtons = document.getElementsByClassName('close-button');
+    // var signup = document.getElementById('join-choir');
+    var allforms = document.querySelectorAll("#join-choir");
+
+    allforms.onclick = function(){
+        preRegisterModal.style.display = 'block';
+    }
+    // Open the Plan Visit modal
+    planVisitBtn.onclick = function() {
+        planVisitModal.style.display = 'block';
+    }
+
+    // Open the Pre-Register modal
+    registerVisitBtn.onclick = function() {
+        preRegisterModal.style.display = 'block';
+    }
+
+    // Close modals when the close button is clicked
+    Array.prototype.forEach.call(closeButtons, function(button) {
+        button.onclick = function() {
+            planVisitModal.style.display = 'none';
+            preRegisterModal.style.display = 'none';
+        }
+    });
+
+    // Close modals when clicking outside of the modal content
+    window.onclick = function(event) {
+        if (event.target == planVisitModal) {
+            planVisitModal.style.display = 'none';
+        }
+        if (event.target == preRegisterModal) {
+            preRegisterModal.style.display = 'none';
+        }
+    }
+
+    // Handle form submission
+    var preRegisterForm = document.getElementById('preRegisterForm');
+    preRegisterForm.onsubmit = function(event) {
+        // event.preventDefault();
+        sendForm();
+    };
+
+    function sendForm() {
+        emailjs.sendForm('service_tc6xe87', 'template_sf5cxny', '#preRegisterForm', 'IGQy_WJa9jI-CYMqu')
+            .then(function(response) {
+                alert('Your message has been sent successfully!');
+                preRegisterModal.style.display = 'none';
+                preRegisterForm.reset();
+            }, function(error) {
+                alert('Failed to send the message. Please try again later.');
+            });
+    }
+});
+
+var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtubeVideo', {
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        var playButton = document.getElementById('playButton');
+        var pauseButton = document.getElementById('pauseButton');
+
+        playButton.addEventListener('click', function() {
+            player.playVideo();
+        });
+
+        pauseButton.addEventListener('click', function() {
+            player.pauseVideo();
+        });
+    }
+
+
+    function saveScrollPos() {
+        const scrollPos = window.scrollY;
+        document.querySelectorAll('.post-item').forEach(item => {
+            item.href = `${item.href}&scrollPos=${scrollPos}`;
+        });
+    }
